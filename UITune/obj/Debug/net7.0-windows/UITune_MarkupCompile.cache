@@ -1,5 +1,5 @@
 ﻿UITune
-1.0.0.0
+
 
 winexe
 C#
@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 D:\Github\IT008.014-VisualProgramming\UITune\App.xaml
-2796760167
+2-374268260
 
-61874787027
-2011375328672
-MainWindow.xaml;MVVM\View\LoginWindow\LoginWindow.xaml;
+4-606474812
+198-759771931
+MainWindow.xaml;MVVM\View\LoginWindow.xaml;
 
-True
+False
 

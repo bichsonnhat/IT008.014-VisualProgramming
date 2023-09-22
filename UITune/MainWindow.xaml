@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:UITune"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+        
     <Grid>
-
+        
     </Grid>
 </Window>
