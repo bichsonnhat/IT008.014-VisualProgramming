@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "07BUzuQsT2yBNb3QN7YHzNSkSZ+hXjpoyaxI7nqPTEYRQzwdOXINd2S+xPYsUAh3/21joP8rILRo6ITR5Gzrhw==",
+  "dgSpecHash": "b3ub2vI3ZQ0yc8jivld5+3vHQu3fFy9+F9D697z3l36V2JEsvd0fUs+lcperLZJIB2zb/xmMCeJJ9Fo3ZVH6vQ==",
   "success": true,
   "projectFilePath": "D:\\Github\\IT008.014-VisualProgramming\\UITune\\UITune.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\materialdesigncolors\\2.1.4\\materialdesigncolors.2.1.4.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\materialdesignthemes\\4.9.0\\materialdesignthemes.4.9.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
+  ],
   "logs": []
 }
