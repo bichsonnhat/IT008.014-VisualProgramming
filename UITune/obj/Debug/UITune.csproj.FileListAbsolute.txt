@@ -23,3 +23,6 @@ D:\Github\IT008.014-VisualProgramming\UITune\obj\Debug\UITune.csproj.CopyComplet
 D:\Github\IT008.014-VisualProgramming\UITune\obj\Debug\UITune.exe
 D:\Github\IT008.014-VisualProgramming\UITune\obj\Debug\UITune.pdb
 D:\Github\IT008.014-VisualProgramming\UITune\obj\Debug\App.baml
+D:\Github\IT008.014-VisualProgramming\UITune\obj\Debug\Views\LoginWindow\LoginWindow.g.cs
+D:\Github\IT008.014-VisualProgramming\UITune\obj\Debug\Views\LoginWindow\LoginWindow.baml
+D:\Github\IT008.014-VisualProgramming\UITune\obj\Debug\UITune.Resource1.resources
