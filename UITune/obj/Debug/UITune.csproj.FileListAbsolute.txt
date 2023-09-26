@@ -10,11 +10,9 @@ D:\Github\IT008.014-VisualProgramming\UITune\bin\Debug\MaterialDesignThemes.Wpf.
 D:\Github\IT008.014-VisualProgramming\UITune\bin\Debug\Microsoft.Xaml.Behaviors.pdb
 D:\Github\IT008.014-VisualProgramming\UITune\bin\Debug\Microsoft.Xaml.Behaviors.xml
 D:\Github\IT008.014-VisualProgramming\UITune\obj\Debug\UITune.csproj.AssemblyReference.cache
-D:\Github\IT008.014-VisualProgramming\UITune\obj\Debug\MainWindow.g.cs
 D:\Github\IT008.014-VisualProgramming\UITune\obj\Debug\App.g.cs
 D:\Github\IT008.014-VisualProgramming\UITune\obj\Debug\UITune_MarkupCompile.cache
 D:\Github\IT008.014-VisualProgramming\UITune\obj\Debug\UITune_MarkupCompile.lref
-D:\Github\IT008.014-VisualProgramming\UITune\obj\Debug\MainWindow.baml
 D:\Github\IT008.014-VisualProgramming\UITune\obj\Debug\UITune.g.resources
 D:\Github\IT008.014-VisualProgramming\UITune\obj\Debug\UITune.Properties.Resources.resources
 D:\Github\IT008.014-VisualProgramming\UITune\obj\Debug\UITune.csproj.GenerateResource.cache
@@ -26,3 +24,5 @@ D:\Github\IT008.014-VisualProgramming\UITune\obj\Debug\App.baml
 D:\Github\IT008.014-VisualProgramming\UITune\obj\Debug\Views\LoginWindow\LoginWindow.g.cs
 D:\Github\IT008.014-VisualProgramming\UITune\obj\Debug\Views\LoginWindow\LoginWindow.baml
 D:\Github\IT008.014-VisualProgramming\UITune\obj\Debug\UITune.Resource1.resources
+D:\Github\IT008.014-VisualProgramming\UITune\obj\Debug\MainWindow.g.cs
+D:\Github\IT008.014-VisualProgramming\UITune\obj\Debug\MainWindow.baml
