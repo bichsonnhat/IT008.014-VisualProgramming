@@ -137,13 +137,16 @@
     <Resource Include="Images\Poster3.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\Poster4.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\Poster5.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\uitune.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="uitune_logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\poster5.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\poster4.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\MaterialDesignThemes.4.9.0\build\MaterialDesignThemes.targets" Condition="Exists('packages\MaterialDesignThemes.4.9.0\build\MaterialDesignThemes.targets')" />

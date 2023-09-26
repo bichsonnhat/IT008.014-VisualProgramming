@@ -12,11 +12,13 @@
         TextElement.FontSize="13"
         TextOptions.TextFormattingMode="Ideal"
         TextOptions.TextRenderingMode="Auto"
-        Background="{DynamicResource MaterialDesignPaper}"
+        Background="Transparent"
         FontFamily="{DynamicResource MaterialDesignFont}"
         ResizeMode="NoResize"
         WindowStyle="None"
-        AllowsTransparency="True">
+        AllowsTransparency="True"
+        Icon="uitune_logo.ico"
+        WindowStartupLocation="CenterScreen">
 
     <Window.Resources>
         <ResourceDictionary>
@@ -28,10 +30,11 @@
             <BitmapImage x:Key="Image2" UriSource="/Images/Poster2.jpg"/>
             <BitmapImage x:Key="Image3" UriSource="/Images/Poster3.jpg"/>
             <BitmapImage x:Key="Image4" UriSource="/Images/Poster4.jpg"/>
-            <BitmapImage x:Key="Image5" UriSource="/Images/Poster5.jpg"/>
+            <BitmapImage x:Key="Image5" UriSource="/Images/Poster5.jpeg"/>
         </ResourceDictionary>
     </Window.Resources>
 
+    <Border BorderThickness="2" CornerRadius="15" Background="White">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="350"/>
@@ -98,44 +101,47 @@
 
 
         <!-- Images Transition -->
-        <Image x:Name="posterImage" 
-               Stretch="UniformToFill">
-            <Image.Triggers>
-                <EventTrigger RoutedEvent="Loaded">
-                    <BeginStoryboard>
-                        <Storyboard RepeatBehavior="Forever">
-                            <DoubleAnimation
+            <Image x:Name="posterImage" Stretch="UniformToFill">
+                <Image.Clip>
+                    <RectangleGeometry RadiusX="15" RadiusY="15" Rect="0,0,400,450" />
+                </Image.Clip>
+                <Image.Triggers>
+                    <EventTrigger RoutedEvent="Loaded">
+                        <BeginStoryboard>
+                            <Storyboard RepeatBehavior="Forever">
+                                <DoubleAnimation
                                 Storyboard.TargetProperty="Opacity"
                                 SpeedRatio=".4"
                                 From="1"
                                 To="1"
                                 AutoReverse="True"/>
 
-                            <ObjectAnimationUsingKeyFrames
+                                <ObjectAnimationUsingKeyFrames
                                 Storyboard.TargetProperty="Source">
-                                <DiscreteObjectKeyFrame
+                                    <DiscreteObjectKeyFrame
                                     Value="{StaticResource Image1}"
                                     KeyTime="0:0:0" />
 
-                                <DiscreteObjectKeyFrame
+                                    <DiscreteObjectKeyFrame
                                     Value="{StaticResource Image2}"
                                     KeyTime="0:0:1" />
 
-                                <DiscreteObjectKeyFrame
+                                    <DiscreteObjectKeyFrame
                                     Value="{StaticResource Image3}"
                                     KeyTime="0:0:2" />
 
-                                <DiscreteObjectKeyFrame
+                                    <DiscreteObjectKeyFrame
                                     Value="{StaticResource Image4}"
                                     KeyTime="0:0:3" />
-                                <DiscreteObjectKeyFrame
+                                    <DiscreteObjectKeyFrame
                                     Value="{StaticResource Image5}"
                                     KeyTime="0:0:4" />
-                            </ObjectAnimationUsingKeyFrames>
-                        </Storyboard>
-                    </BeginStoryboard>
-                </EventTrigger>
-            </Image.Triggers>
-        </Image>
-    </Grid>
+                                </ObjectAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </Image.Triggers>
+            </Image>
+        </Grid>
+    </Border>
 </Window>
