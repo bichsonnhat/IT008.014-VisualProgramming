@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Github\IT008.014-VisualProgramming\UITune\obj\Debug\
+D:\Project\UITune\obj\Debug\
 UITune
 none
 false
 DEBUG;TRACE
-D:\Github\IT008.014-VisualProgramming\UITune\App.xaml
-2-175521259
+D:\Project\UITune\App.xaml
+51870240165
 
-8-518521610
-171379239943
-MainWindow.xaml;Views\LoginWindow\LoginWindow.xaml;
+111900842723
+16-2038856407
+MainWindow.xaml;ResourceXAML\Font.xaml;ResourceXAML\MainResource.xaml;UserControlUITune\ControlBarUC.xaml;Views\LoginWindow\LoginWindow.xaml;
 
-False
+True
 

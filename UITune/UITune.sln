@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UITune", "UITune.csproj", "{5C60DC4B-1493-411B-AF08-0B4A7F13BAF4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UITune", "UITune.csproj", "{5EAB8CC9-49FB-4C40-8DE3-D43FE22F80E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5C60DC4B-1493-411B-AF08-0B4A7F13BAF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5C60DC4B-1493-411B-AF08-0B4A7F13BAF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5C60DC4B-1493-411B-AF08-0B4A7F13BAF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5C60DC4B-1493-411B-AF08-0B4A7F13BAF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EAB8CC9-49FB-4C40-8DE3-D43FE22F80E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EAB8CC9-49FB-4C40-8DE3-D43FE22F80E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EAB8CC9-49FB-4C40-8DE3-D43FE22F80E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EAB8CC9-49FB-4C40-8DE3-D43FE22F80E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {8F4AF79E-CB0F-42AE-B9A0-32A638EC43DD}
+		SolutionGuid = {D5D32EE0-2553-40A4-B34C-07A82790218C}
 	EndGlobalSection
 EndGlobal

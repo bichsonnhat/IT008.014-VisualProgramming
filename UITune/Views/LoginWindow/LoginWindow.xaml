@@ -4,8 +4,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UITune.Views.LoginWindow"
+        xmlns:uc="clr-namespace:UITune.UserControlUITune"
         mc:Ignorable="d"
-        Title="LoginWindow" Height="450" Width="800"
+        Title="Đăng nhập" Height="450" Width="800"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         TextElement.FontWeight="Regular"
@@ -17,7 +18,7 @@
         ResizeMode="NoResize"
         WindowStyle="None"
         AllowsTransparency="True"
-        Icon="uitune_logo.ico"
+        Icon="/Images/uitune_logo.ico"
         WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <ResourceDictionary>
@@ -32,115 +33,132 @@
             <BitmapImage x:Key="Image5" UriSource="/Images/Poster5.jpeg"/>
         </ResourceDictionary>
     </Window.Resources>
-
     <Border BorderThickness="2" CornerRadius="15" Background="White">
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="350"/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-
+                    <ColumnDefinition Width="350"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label 
+                   Grid.Column="1"
+                   FontFamily="junegull"
+                   FontSize="35"
+                   FontWeight="UltraBlack"
+                   Foreground="#2877f7"
+                   Content="Welcome Back!"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   Height="50"
+                   Margin="0,-25,0,0">
+                </Label>
+                <StackPanel Orientation="Horizontal"
+                                VerticalAlignment="Top"
+                                HorizontalAlignment="Right"
+                                Grid.Row="0"
+                                Grid.Column="1">
+                    <uc:ControlBarUC></uc:ControlBarUC>
+            </StackPanel>
             <!-- Login & Password -->
-            <StackPanel
-            Grid.Column="1"
-            Margin="50">
+                <StackPanel
+                Grid.Column="1"
+                Margin="35">
 
-                <Ellipse
-                Width="150"
-                Height="150"
-                HorizontalAlignment="Center">
-                    <Ellipse.Fill>
-                        <ImageBrush
-                        Stretch="UniformToFill"
-                        ImageSource="uitune.png"
-                        />
+                    <Ellipse
+                    Width="150"
+                    Height="150"
+                    HorizontalAlignment="Center">
+                        <Ellipse.Fill>
+                            <ImageBrush
+                            Stretch="UniformToFill"
+                            ImageSource="/Images/uitune.png"
+                            />
 
-                    </Ellipse.Fill>
-                </Ellipse>
-            </StackPanel>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                </StackPanel>
 
-            <!-- Login & PassWord-->
-            <materialDesign:PackIcon Kind="AccountCircle" Grid.Column="1" Margin="59,235,0,0" Height="30" Width="41"/>
-            <StackPanel
-            Grid.Column="1" Margin="100,225,100,0" Height="50" VerticalAlignment="Top">
-                <TextBox
-                Height="50"
-                materialDesign:HintAssist.Hint="Username"
-                AcceptsReturn="True"
-                IsEnabled="{Binding IsChecked, ElementName=MaterialDesignOutlinedTextBoxEnabledComboBox}"
-                Style="{StaticResource MaterialDesignOutlinedTextBox}"
-                TextWrapping="Wrap"
-                VerticalScrollBarVisibility="Auto" />
-            </StackPanel>
+                <!-- Login & PassWord-->
+                <materialDesign:PackIcon Kind="AccountCircle" Grid.Column="1" Margin="59,250,0,0" Height="30" Width="41"/>
+                <StackPanel
+                    Grid.Column="1" Margin="100,240,100,0" Height="50" VerticalAlignment="Top">
+                    <TextBox
+                        Height="50"
+                        materialDesign:HintAssist.Hint="Username"
+                        AcceptsReturn="True"
+                        IsEnabled="{Binding IsChecked, ElementName=MaterialDesignOutlinedTextBoxEnabledComboBox}"
+                        Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                        TextWrapping="Wrap"
+                        VerticalScrollBarVisibility="Auto" />
+                </StackPanel>
 
-            <materialDesign:PackIcon Kind="Lock" Grid.Column="1" Margin="59,290,0,0" Height="30" Width="41"/>
-            <StackPanel
-            Grid.Column="1" Margin="100,280,100,0" Height="50" VerticalAlignment="Top">
-                <PasswordBox
-    materialDesign:HintAssist.HelperText="Forgotten password?"
-    materialDesign:HintAssist.Hint="Password"
-    materialDesign:TextFieldAssist.HasClearButton="True"
-    IsEnabled="{Binding ElementName=RevealPasswordOutlinedEnabled, Path=IsChecked}"
-    Style="{StaticResource MaterialDesignOutlinedRevealPasswordBox}" />
-            </StackPanel>
+                <materialDesign:PackIcon Kind="Lock" Grid.Column="1" Margin="59,305,0,0" Height="30" Width="41"/>
+                <StackPanel
+                Grid.Column="1" Margin="100,295,100,0" Height="50" VerticalAlignment="Top">
+                    <PasswordBox
+                        materialDesign:HintAssist.HelperText="Forgotten password?"
+                        materialDesign:HintAssist.Hint="Password"
+                        materialDesign:TextFieldAssist.HasClearButton="True"
+                        IsEnabled="{Binding ElementName=RevealPasswordOutlinedEnabled, Path=IsChecked}"
+                        Style="{StaticResource MaterialDesignOutlinedRevealPasswordBox}" />
+                </StackPanel>
 
-            <Grid
-            Grid.Column="1"
-            Margin="230, 290, 100, 0"
-              Width="124">
-                <Button
-                Margin="2,0"
-                materialDesign:ButtonProgressAssist.IsIndeterminate="True"
-                materialDesign:ButtonProgressAssist.IsIndicatorVisible="True"
-                materialDesign:ButtonProgressAssist.Value="-1"
-                Content="Sign in"
-                IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
-                Style="{StaticResource MaterialDesignRaisedButton}" />
+                <Grid
+                Grid.Column="1"
+                Margin="230, 305, 100, 0"
+                  Width="124">
+                    <Button
+                    Margin="2,0"
+                    materialDesign:ButtonProgressAssist.IsIndeterminate="True"
+                    materialDesign:ButtonProgressAssist.IsIndicatorVisible="True"
+                    materialDesign:ButtonProgressAssist.Value="-1"
+                    Content="Sign in"
+                    IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+                    Style="{StaticResource MaterialDesignRaisedButton}" />
+                </Grid>
+
+
+                <!-- Images Transition -->
+                <Image x:Name="posterImage" Stretch="UniformToFill">
+                    <Image.Clip>
+                        <RectangleGeometry RadiusX="15" RadiusY="15" Rect="0,0,400,450" />
+                    </Image.Clip>
+                    <Image.Triggers>
+                        <EventTrigger RoutedEvent="Loaded">
+                            <BeginStoryboard>
+                                <Storyboard RepeatBehavior="Forever">
+                                    <DoubleAnimation
+                                    Storyboard.TargetProperty="Opacity"
+                                    SpeedRatio=".4"
+                                    From="1"
+                                    To="1"
+                                    AutoReverse="True"/>
+
+                                    <ObjectAnimationUsingKeyFrames
+                                    Storyboard.TargetProperty="Source">
+                                        <DiscreteObjectKeyFrame
+                                        Value="{StaticResource Image1}"
+                                        KeyTime="0:0:0" />
+
+                                        <DiscreteObjectKeyFrame
+                                        Value="{StaticResource Image2}"
+                                        KeyTime="0:0:1" />
+
+                                        <DiscreteObjectKeyFrame
+                                        Value="{StaticResource Image3}"
+                                        KeyTime="0:0:2" />
+
+                                        <DiscreteObjectKeyFrame
+                                        Value="{StaticResource Image4}"
+                                        KeyTime="0:0:3" />
+                                        <DiscreteObjectKeyFrame
+                                        Value="{StaticResource Image5}"
+                                        KeyTime="0:0:4" />
+                                    </ObjectAnimationUsingKeyFrames>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </Image.Triggers>
+                </Image>
             </Grid>
-
-
-            <!-- Images Transition -->
-            <Image x:Name="posterImage" Stretch="UniformToFill">
-                <Image.Clip>
-                    <RectangleGeometry RadiusX="15" RadiusY="15" Rect="0,0,400,450" />
-                </Image.Clip>
-                <Image.Triggers>
-                    <EventTrigger RoutedEvent="Loaded">
-                        <BeginStoryboard>
-                            <Storyboard RepeatBehavior="Forever">
-                                <DoubleAnimation
-                                Storyboard.TargetProperty="Opacity"
-                                SpeedRatio=".4"
-                                From="1"
-                                To="1"
-                                AutoReverse="True"/>
-
-                                <ObjectAnimationUsingKeyFrames
-                                Storyboard.TargetProperty="Source">
-                                    <DiscreteObjectKeyFrame
-                                    Value="{StaticResource Image1}"
-                                    KeyTime="0:0:0" />
-
-                                    <DiscreteObjectKeyFrame
-                                    Value="{StaticResource Image2}"
-                                    KeyTime="0:0:1" />
-
-                                    <DiscreteObjectKeyFrame
-                                    Value="{StaticResource Image3}"
-                                    KeyTime="0:0:2" />
-
-                                    <DiscreteObjectKeyFrame
-                                    Value="{StaticResource Image4}"
-                                    KeyTime="0:0:3" />
-                                    <DiscreteObjectKeyFrame
-                                    Value="{StaticResource Image5}"
-                                    KeyTime="0:0:4" />
-                                </ObjectAnimationUsingKeyFrames>
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger>
-                </Image.Triggers>
-            </Image>
-        </Grid>
-    </Border>
+        </Border>
 </Window>
