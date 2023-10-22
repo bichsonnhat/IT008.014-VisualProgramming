@@ -72,6 +72,9 @@
     <Compile Include="ViewModel\BaseViewModel.cs" />
     <Compile Include="ViewModel\ControlBarVM\ControlBarViewModel.cs" />
     <Compile Include="ViewModel\LoginVM\LoginViewModel.cs" />
+    <Compile Include="Views\Admin\MainAdminWindow.xaml.cs">
+      <DependentUpon>MainAdminWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\LoginWindow\LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
     </Compile>
@@ -92,6 +95,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControlUITune\ControlBarUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Admin\MainAdminWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
