@@ -11,7 +11,7 @@
         WindowStyle="None"
         Background="Transparent">
     <Grid>
-        <Border Background="#212529"
+        <Border Background="Black"
                 CornerRadius="15"/>
         <Grid>
             <Grid.RowDefinitions>
@@ -29,7 +29,7 @@
             <Grid HorizontalAlignment="Left"
                   Width="343">
                   <Border Background="#272B2F"
-                          CornerRadius="15"/>
+                          CornerRadius="15" Margin="10,47,10,0" Height="313" VerticalAlignment="Top"/>
             </Grid>
 
             <StackPanel>
