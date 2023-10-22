@@ -49,7 +49,7 @@
                                     
                                 </Border>
                                 <Image Source="/Images/home.png" Margin="-96,13,194,15"/>
-                                <TextBlock Text="Home" Style="{StaticResource Gotham}" FontSize="17" VerticalAlignment="Center" Foreground="White" Margin="60,0,32,0">
+                                <TextBlock Text="Homee" Style="{StaticResource Gotham}" FontSize="17" VerticalAlignment="Center" Foreground="White" Margin="60,0,32,0">
 
                                 </TextBlock>
                             </Grid>
