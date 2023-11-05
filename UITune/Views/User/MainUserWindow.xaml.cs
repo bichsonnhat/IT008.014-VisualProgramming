@@ -23,5 +23,15 @@ namespace UITune.Views.User
         {
             InitializeComponent();
         }
+
+        private void ColumnDefinition_Selected(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
